@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(50, 25, 69);
+}
+.container{
+    position: relative;
+    display: grid;
+    background: #111;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container .value{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+
+
+}
+.container span{
+    display: grid;
+    width: 66px;
+    height: 60px;
+    background-color: rgb(85, 85, 85);
+    place-items: center;
+    border: 1px solid black;
+
+
+}
+.container span:active{
+    background: greenyellow;
+    color: #111;
+}
+.container span.clear{
+    grid-column: span 2;
+    width: 133px;
+    background: red;
+}
+.container span.plus{
+    grid-row: span 2;
+    height: 122px;
+}
+.container span.equal{
+    background: rgb(47, 196, 255);
+}
